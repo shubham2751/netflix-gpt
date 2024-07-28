@@ -8,6 +8,13 @@
 - Sign Up Form
 - Form Validation
 - useRef Hook
+- Firebase Setup
+- Deploying are app to production
+  Steps:
+  - firebase login
+  - firebase init
+  - firebase deploy
+    URL link: https://netflixgpt-5df05.web.app/
 
 # Feature
 
