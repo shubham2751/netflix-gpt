@@ -15,6 +15,7 @@
   - firebase init
   - firebase deploy
     URL link: https://netflixgpt-5df05.web.app/
+- Create Sign Up User Account
 
 # Feature
 
