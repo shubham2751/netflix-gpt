@@ -1,26 +1,24 @@
 export const validateData = (username = null, email, password) => {
   let isNameValid = false;
   if (username) {
-    isNameValid = /^[a-zA-Z ]{2,30}$/.test(username);
+    isNameValid = /^[a-zA-Z][a-zA-Z0-9_-]{2,15}$/.test(username);
   }
 
   if (username && !isNameValid) {
     return "Name is Invalid";
   }
 
-  const isEmailValid = /^[a-zA-Z0-9.!#$%&'*+\/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/.test(
-    email
-  );
+  const isEmailValid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
 
   if (!isEmailValid) {
     return "Email is Invalid";
   }
 
-  const isPasswordValid = /^(?=.*\d)(?=.*[A-Z])(?=.*[a-z])(?=.*[a-zA-Z!#$%&? "])[a-zA-Z0-9!#$%&?]{8,20}$/.test(
+  const isPasswordValid = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*])[A-Za-z\d!@#$%^&*]{8,}$/.test(
     password
   );
 
-  if (isPasswordValid) {
+  if (!isPasswordValid) {
     return "Password is Invalid";
   }
 
