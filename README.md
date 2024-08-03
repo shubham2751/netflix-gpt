@@ -16,6 +16,10 @@
   - firebase deploy
     URL link: https://netflixgpt-5df05.web.app/
 - Create Sign Up User Account
+- Implement Sign In user API
+- Created Redux Store with userSlice
+- Implemented Sign Out
+- Update Profile
 
 # Feature
 
