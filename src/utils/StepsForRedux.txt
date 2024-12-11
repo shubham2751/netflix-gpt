@@ -1,0 +1,6 @@
+Steps to create a Store through Redux
+
+1. Install Redux
+2. Install reduxjs/toolkit
+3. Create appStore using configureStore in appStore.js file and add reducer
+4. Create a Slice
